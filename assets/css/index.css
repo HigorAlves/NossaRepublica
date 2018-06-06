@@ -1,0 +1,14 @@
+#escolhaMoradores {
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.formBox{
+    border-radius: 12px;
+    border: 2px solid lightgrey;
+    padding: 10px;
+}
+
+#resultado{
+    
+}
