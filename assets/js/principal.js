@@ -145,5 +145,12 @@ function resultado(){
     pIptu.innerHTML = "&#x1F981 R$ ";
     pIptu.textContent += morador.iptu;
     divBox.appendChild(pIptu);
+    //Total
+    var pTotal = document.createElement("p");
+    pTotal.innerHTML = "&#x1F4B0 Total R$ ";
+    pTotal.textContent += (morador.agua + morador.luz + morador.internet + morador.aluguel + morador.iptu);
+    divBox.appendChild(pTotal);
+    divBox.innerHTML += "--------------------------------------"
+    divBox.innerHTML += "<br/>";
   });
 }
