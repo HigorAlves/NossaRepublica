@@ -3,22 +3,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/index.css">
-    
+
     <title>Contas Republica</title>
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark">
         <span class="navbar-brand mb-0 h1">Calculadora Republica</span>
     </nav>
-    
+
     <!--Escolhimento de quantos usuarios iram existir-->
     <section id="escolhaMoradores">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-6 col-sm-12 col-lg-4">
                     <form>
                         <div class="form-group">
                             <label for="qtMoradores">Selecione quantos moradores existem</label>
@@ -36,31 +36,45 @@
                         </div>
                     </form>
                 </div>
-                <div class="col">
+                <div class="col-md-6 col-sm-12 col-lg-4">
                     <label for="inputAluguel">Insira o valor do aluguel a ser divido</label>
-                    <input type="password" class="form-control" id="inputAluguel" placeholder="Insira o valor do aluguel" required>
+                    <input type="value" class="form-control" id="inputAluguel" placeholder="Insira o valor do aluguel" required>
                 </div>
-                <div class="col">
+                <div class="col-md-6 col-sm-12 col-lg-4">
                     <label for="inputIPTU">Valor IPTU</label>
                     <input type="value" class="form-control" id="inputIPTU" placeholder="Valor do IPTU" pattern="[1,]{1-3}">
                 </div>
             </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-12 col-lg-4">
+                  <label for="inputAgua">Agua</label>
+                  <input type="value" class="form-control" id="inputAgua" placeholder="Valor da agua" pattern="[1,]{1-3}">
+              </div>
+              <div class="col-md-6 col-sm-12 col-lg-4">
+                <label for="inputLuz">Luz</label>
+                <input type="value" class="form-control" id="inputLuz" placeholder="Valor da Luz" pattern="[1,]{1-3}">
+              </div>
+              <div class="col-md-6 col-sm-12 col-lg-4">
+                <label for="inputInternet">Internet</label>
+                <input type="value" class="form-control" id="inputInternet" placeholder="Valor da Internet" pattern="[1,]{1-3}">
+              </div>
+            </div>
         </div>
     </section>
-    
+
     <!--Tabela Input moradores com os dados-->
     <section>
         <div class="container">
             <div class="row" id="morador">
             </div>
-            <button type="button" class="btn btn-success">Calcular</button>
+            <button type="button" class="btn btn-success" id="calcular">Calcular</button>
         </div>
     </section>
-    
-    <section id="Resultado">
+
+    <section id="resultado">
 
     </section>
-    
+
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/principal.js"></script>
 </body>
